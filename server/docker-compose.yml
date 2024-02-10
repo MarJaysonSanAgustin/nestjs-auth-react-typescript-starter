@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  db:
+    build: ./dev
+    restart: always
+    environment:
+      POSTGRES_DB: placefindr_users
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: l0c4lp4ss
+    ports:
+      - 6432:5432
+
